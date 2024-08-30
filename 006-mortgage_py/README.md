@@ -7,7 +7,7 @@ This program will determine the monthly payment for a 30 year mortgage for an in
 
 The formula (below) is also available at https://en.wikipedia.org/wiki/Mortgage_loan#Principal_and_interest. 
 
-$ A = P \times \dfrac{r(1+r)^n}{(1+r)^n - 1} $
+$A = P \times \dfrac{r(1+r)^n}{(1+r)^n - 1}$
 
 You need to compute periodic amortization payment assuming 12 payments per year.
 
