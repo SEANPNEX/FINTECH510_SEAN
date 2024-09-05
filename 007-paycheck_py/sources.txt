@@ -2,7 +2,7 @@ Place an asterisk in parenthesis next to the appropriate line(s).
 If you acknowledge using any sources, list those sources at the
 end of this document (e.g., book, student name, website, etc).
 
-( ) No outside materials or sources
+(*) No outside materials or sources
 ( ) Qubit Coding Assistant (no further details needed)
 ( ) Consulted with individuals other than the instructors and TAs
 ( ) Web resources (e.g., StackOverflow)
