@@ -9,19 +9,20 @@ def print_triangle(size):
     number of asterisks printed 
     """
     # start with star_count being 0
-
+    star_count = 0
     # count from 0 (inclusive) to size (exclusive), for each number i that you count
-
-        #count from 0 (inclusive) to i (inclusive), for each number j that you count
-
-            #print a "*"
-
-            #increment star_count
-
-        #when you finish counting on j, print a new line
-
+    for i in range(1, size + 1):
+        # count from 0 (inclusive) to i (inclusive), for each number j that you count
+        line = ""
+        for j in range(i):
+            # print a "*"
+            line += "*"
+            # increment star_count
+            star_count += 1
+        # when you finish counting on j, print a new line
+        print(line)
     # when you finish counting on i, your answer is star_count
-
+    return star_count
 
 
 print("Here is a triangle with height 4")
@@ -33,4 +34,7 @@ print("That triangle had {:d} total stars".format(num_stars))
 # finally, print "That triangle had {:d} total stars", such that the {:d} 
 # prints the value of numStars
 
+print("Here is a triangle with height 7")
+num_stars = print_triangle(7)
+print("That triangle had {:d} total stars".format(num_stars))
 
