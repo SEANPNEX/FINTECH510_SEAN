@@ -1,9 +1,10 @@
-import math
 def update_stage(age, saving, rate, change):
     """
     update stage for age and savings
     """
-    print(f"Age {math.floor(age / 12):3d} month {age % 12:2d} you have ${saving:,.2f}")
+    print(f"Age {age // 12:3d} month {age % 12:2d} you have ${saving:,.2f}")
+    with open("ans.txt",'a') as f:
+        f.write(f"Age {age // 12:3d} month {age % 12:2d} you have ${saving:,.2f}\n")
     age += 1
     saving = (1 + rate / (12 * 100)) * saving + change
     return age, saving
