@@ -28,7 +28,7 @@ def create_output_filename(name):
     return f"{name}.counts"
 
 
-def process_key_file(filename,key_values):
+def process_key_file(filename, key_values):
     """
     Loads in a key file and produces a dictionary of the count of the values 
     If a key is not found in key_values use "<unknown>"
@@ -69,7 +69,7 @@ def write_output(filename, counts):
     Returns: None 
     """
     with open(filename, "w") as f:
-        for i in sorted(counts, key = counts.get,reverse = True):
+        for i in sorted(counts, key=counts.get, reverse=True):
             f.write(f"{i}: {counts.get(i)}\n")
     return
 
