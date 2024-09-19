@@ -66,7 +66,7 @@ the "notebooks" directory in a prior year's student github repository
 98 	 notebooks/requirements.txt
 110084 	 notebooks/resources/python_overloading.pdf
 299363 	 notebooks/resources/therac25.pdf
-128 	 notebooks/resources
+128      notebooks/resources
 1280 	 notebooks
 4867930 	 total
 ```
