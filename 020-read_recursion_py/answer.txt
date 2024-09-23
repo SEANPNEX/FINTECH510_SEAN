@@ -1,0 +1,7 @@
+printDigits called with 297
+a=29, b=7
+printDigits called with 29
+a=2, b=9
+printDigits called with 2
+a=0, b=2
+297

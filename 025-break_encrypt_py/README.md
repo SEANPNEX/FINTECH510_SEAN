@@ -33,8 +33,7 @@ to work, it typically does.
    character).  This number should be the encryption key used on the text. 
    It should be in the range [0,26).  That is, the number you print should
    obey 0 <= answer < 26.
- - On failure, your program should print an appropriate message to the console, 
-   then exit with 1 as the error code
+ - On failure, your program should print an appropriate message to the console,  
  - Name your program  `breaker.py`
 
 ## Hints:
