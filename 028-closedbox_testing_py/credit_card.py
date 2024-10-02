@@ -64,4 +64,5 @@ def validate(card_number: str):
         return False
 
     return is_luhn_valid(card_number)
+    return True
 

@@ -123,7 +123,7 @@ that the portfolio is worth 1309.33 at the end of the first year) the
 calculation would be: 
 ```
 1309.33 * (1 + 0.0099) * 98% + 1309.33 * (1 + 0.0054) * (1 - 98%) +
-102.50
+102.50 
 = 1424.65.
 ```
 

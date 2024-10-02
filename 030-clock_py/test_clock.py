@@ -50,7 +50,7 @@ class TestClock(unittest.TestCase):
         import ast
 
         b = MyClock24(23,59,58)
-        self.assertEqual(ast.literal_eval(repr(b)),{'hours': 23, 'minutes': 59, 'seconds': 58})
+        self.assertEqual(ast.literal_eval(repr(b)), {'hours': 23, 'minutes': 59, 'seconds': 58})
 
     def test_properties(self):
         """ test access comparisons """
@@ -97,3 +97,7 @@ class TestClock(unittest.TestCase):
         for i in range(70):
             a.tick()
         self.assertEqual(str(a),"00:00:10")
+
+
+if __name__ == '__main__':
+    unittest.main(argv=['unittest', 'TestClock'], verbosity=2, exit=False)
