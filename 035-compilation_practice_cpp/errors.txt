@@ -1,0 +1,56 @@
+hello_1.cpp: In function ‘int main()’:
+hello_1.cpp:5:5: error: ‘cout’ was not declared in this scope
+    5 |     cout << "Hello, World!\n";
+      |     ^~~~
+      
+hello_2.cpp:5:13: warning: missing terminating " character
+    5 |     cout << "Hello, World!\n;
+      |             ^
+hello_2.cpp:5:13: error: missing terminating " character
+    5 |     cout << "Hello, World!\n;
+      |             ^~~~~~~~~~~~~~~~~ 
+hello_2.cpp: In function ‘int main()’:
+hello_2.cpp:6:5: error: expected primary-expression before ‘return’
+    6 |     return 0;
+      |     ^~~~~~
+
+hello_3.cpp:4:1: error: ‘integer’ does not name a type
+    4 | integer main() {
+      | ^~~~~~~
+
+hello_4.cpp: In function ‘int main()’:
+hello_4.cpp:5:10: error: no match for ‘operator<’ (operand types are ‘std::ostream’ {aka ‘std::basic_ostream<char>’} and ‘const char [15]’)
+    5 |     cout < "Hello, World!\n";
+      |     ~~~~ ^ ~~~~~~~~~~~~~~~~~
+      |     |      |
+      |     |      const char [15]
+      |     std::ostream {aka std::basic_ostream<char>}
+
+hello_5.cpp: In function ‘int main()’:
+hello_5.cpp:5:30: error: expected ‘;’ before ‘return’
+    5 |     cout << "Hello, World!\n"
+      |                              ^
+      |                              ;
+    6 |     return 0;
+      |     ~~~~~~                    
+
+system.cpp: In function ‘int main()’:
+system.cpp:40:42: error: expected ‘)’ before ‘{’ token
+   40 |     for (int year = 1; year <= 10; year++ {
+      |         ~                                ^~
+      |                                          )
+system.cpp:43:14: error: ‘rate’ was not declared in this scope
+   43 |         for (rate = 1; rate <= num_rates; rate++) {
+      |              ^~~~
+
+weight.cpp: In function ‘int main()’:
+weight.cpp:18:12: error: ‘weight’ was not declared in this scope; did you mean ‘height’?
+   18 |     cin >> weight;
+      |            ^~~~~~
+      |            height
+weight.cpp:36:1: error: expected ‘}’ at end of input
+   36 | }
+      | ^
+weight.cpp:11:12: note: to match this ‘{’
+   11 | int main() {
+      |            ^

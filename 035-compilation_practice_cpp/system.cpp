@@ -37,10 +37,10 @@ int main() {
     cout << "\n";
 
     // Calculate and print the future value for each year and rate
-    for (int year = 1; year <= 10; year++ {
+    for (int year = 1; year <= 10; year++){
         cout << setw(4) << year << "  ";
 
-        for (rate = 1; rate <= num_rates; rate++) {
+        for (int rate = 1; rate <= num_rates; rate++) {
             double periodic_rate = rate / 100.0 / 12.0;
             double gain = compute_sip_future_value(1, periodic_rate, year * 12);
             cout << setw(8) << fixed << setprecision(2) << gain;

@@ -23,7 +23,7 @@ class Equity:
             sys.exit(20)
             # raise TypeError("Date must be string")
         if not (self.__valid_date(start) and self.__valid_date(end)):
-            sys.exit(20)
+            sys.exit(10)
             # raise ValueError("Date not valid, must be formed as 'YYYY.MM'")
         start_year, start_month = [int(x) for x in start.strip().split(".")]
         end_year, end_month = [int(x) for x in end.strip().split(".")]
@@ -47,7 +47,7 @@ class Equity:
         if prev_year > current_year:
             return False
         if prev_year < current_year:
-            if not (prev_month==12 and current_month==1):
+            if not (prev_month==12 and current_month==1 and int(abs(prev_year-current_year))==1):
                 return False
         if prev_year == current_year:
             if not (prev_month+1==current_month):
@@ -97,7 +97,7 @@ class Equity:
             
             date_min, date_max = lst_lines[1].split(",")[0], lst_lines[-1].split(",")[0]
             if not self.__validate_date_range(date_min, date_max):
-                sys.exit(20)
+                sys.exit(10)
                 # raise ValueError("Date not in the range of provided data")
         return True
     

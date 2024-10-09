@@ -48,7 +48,7 @@ class Bond:
         if prev_year > current_year:
             return False
         if prev_year < current_year:
-            if not (prev_month==12 and current_month==1):
+            if not (prev_month==12 and current_month==1 and int(abs(prev_year-current_year))==1):
                 return False
         if prev_year == current_year:
             if not (prev_month+1==current_month):
