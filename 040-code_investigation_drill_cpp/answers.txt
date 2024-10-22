@@ -1,0 +1,8 @@
+After each issue type, list the drill # that had that type of error.
+Each issue type should have two drill #'s listed.  Separate each number by a comma.
+
+Syntax errors: 2, 9
+Type errors: 3, 6
+Infinite loops: 5, 7
+
+
