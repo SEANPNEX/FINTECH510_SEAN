@@ -39,10 +39,7 @@
   which can be platform-dependent. This constant also flushes the stream, 
   forcing all output to be written.
 
-```c++
-#include <iostream>
-#include <vector>
-using namespace std;
+```c++{"Duke", "University", "FinTech", "510"};
 
 void someFunction(vector<int> vec) {
   for (auto value : vec) {

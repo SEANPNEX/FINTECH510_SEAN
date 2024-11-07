@@ -1,0 +1,22 @@
+main: 55b47b349692
+f: 55b47b3494b3
+g: 55b47b3492d5
+a: 14, b: 15, p.x: 5
+&a: 0x7ffe6127d3cc
+&b: 0x7ffe6127d3c8
+&p: 0x7ffe6127d3c0
+&p.x: 0x7ffe6127d3c0
+&p.y: 0x7ffe6127d3c4
+a: a, b: b
+&a: 0x7ffe6127d3fc
+&b: 0x7ffe6127d3f8
+&x: 0x7ffe6127d3c0
+a: 5, b: 6
+&a: 0x7ffe6127d498
+&b: 0x7ffe6127d494
+&pet: 0x7ffe6127d470
+&pet2: 0x7ffe6127d450
+pet2-pet1: 1
+main: 55b47b349692
+f: 55b47b3494b3
+g: 55b47b3492d5

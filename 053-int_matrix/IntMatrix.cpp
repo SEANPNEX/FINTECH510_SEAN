@@ -1,8 +1,18 @@
 #include "IntMatrix.hpp"
 
 IntMatrix::IntMatrix(){
+    numRows = 0;
+    numColumns = 0;
+    rows = nullptr;
 }
 IntMatrix::IntMatrix(int r, int c) {
+    numRows = r;
+    numColumns = c;
+    rows = new IntArray*[r];
+    for (int i = 0; i < r; ++i){
+        rows[i] = new IntArray
+    }
+
 }
 IntMatrix::IntMatrix(const IntMatrix & rhs)  {
 

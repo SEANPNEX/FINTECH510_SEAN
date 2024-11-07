@@ -31,7 +31,7 @@ Write the following members of IntMatrix:
   - `IntMatrix operator+(const IntMatrix & rhs) const`;
      - validate that `this` and `rhs` have the same dimensions.  If not,
        throw an `invalid_argument` exception.
-     - Returns matrix (also the same dimensions as `this` and `rhs`) whose
+     - Retb urns matrix (also the same dimensions as `this` and `rhs`) whose
       elements are the sum of the corresponding elements of `this`
       matrix and `rhs` (does matrix addition).
 

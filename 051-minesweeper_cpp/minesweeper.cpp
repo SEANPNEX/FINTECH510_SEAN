@@ -91,10 +91,23 @@ private:
 public:
   Board(int w, int h, int numMines): width{w}, height{h}, totalMines{numMines} {
       /* write code*/
+    // initialize
+    board = new Square*[height];
+    for(int i=0;i<height;++i){
+        board[i] = new Square[width];
+    }
+    // add mines;
+    for(int i=0;i<totalMines;++i){
+        addRandomMine();
+    }
   }
 
   ~Board() {
       /* write code*/
+        for (int i = 0; i < height; ++i) {
+            delete[] board[i]; 
+        }
+        delete[] board;  
   }
 
   void addRandomMine() {
@@ -112,13 +125,36 @@ public:
   }
 
 
-  int countMines(int x, int y) {
+    int countMines(int x, int y) {
       /* write code*/
+        int count = 0;
+        for (int dx=-1;dx<=1;++dx) {
+            for (int dy=-1;dy<=1;++dy) {
+                if (dx==0&&dy==0) continue;
+
+                int nx = x + dx;
+                int ny = y + dy;
+                if(!in_bounds(nx, ny)) continue;
+                if (board[ny][nx].is_mine()) {
+                    ++count;
+                }
+            }
+        }
+        return count;
   }
 
-  bool checkWin() {
-      /* write code*/
-  }
+    bool checkWin() {
+        for (int y = 0; y < height; ++y) {
+            for (int x = 0; x < width; ++x) {
+                // If there's an unknown square that is not a mine, game is not won
+                if (board[y][x].is_unknown()) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
 
   int countKnownMines() {
       int count = 0;

@@ -44,7 +44,7 @@ AClass * someFunction(int a, int b) {
 int main(void) {
     AClass a(3,4);
     int & r = a.max();
-    AClass * b = someFunction(r,2);
+    AClass * b = someFunction(r,2); 
     a.set(b->getY(), b->getX() - 3);
     delete b;
     r = 9;
