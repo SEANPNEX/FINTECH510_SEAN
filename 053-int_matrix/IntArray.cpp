@@ -34,13 +34,13 @@ IntArray & IntArray::operator=(const IntArray & rhs) {
 
 const int & IntArray::operator[](int index) const {
     if (index < 0 || index >= numElements){
-        throw std::out_of_range("Indedx out of bounds");
+        throw std::out_of_range("INdedx out of bounds");
     }
     return data[index];
 }
 int & IntArray::operator[](int index) {
     if (index < 0 || index >= numElements){
-        throw std::out_of_range("Indedx out of bounds");
+        throw std::out_of_range("INdedx out of bounds");
     }
     return data[index];
 }

@@ -1,7 +1,7 @@
 #include "IntMatrix.hpp"
 
 int main(void) {
-    IntMatrix a(4,5);
+    IntMatrix a(0,0);
     for (int i = 0; i < a.getRows(); i++) {
         for (int j = 0; j < a.getColumns(); j++) {
             a[i][j] = i+j;
@@ -35,6 +35,9 @@ int main(void) {
     IntMatrix c;
     std::cout << "c is:\n" << c << std::endl;
     c = a + b;
+
+    std::cout << "this Line has problem" << std::endl;
+    std::cout << c << std::endl;
     std::cout << "Now, c is:\n" << c << std::endl;
     
     return EXIT_SUCCESS;
