@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <stdexcept> // For std::out_of_range
+#include <iomanip>
 
 using namespace std;
 
@@ -132,27 +133,36 @@ void Matrix<T>::pushBackRow(const vector<T> & newRow) {
 
 template<typename T>
 std::ostream & operator<<(std::ostream & s, const vector<T> & rhs) {
-    s << "{";
+    if(rhs[0]<0){
+        s << "";
+    }else{
+        s << " ";
+    }
     for (size_t i = 0; i < rhs.size(); ++i) {
-        s << rhs[i];
+        s << std::fixed << std::setprecision(4) << rhs[i]; 
+        if ((i < rhs.size() -1) && (rhs[i+1] < 0)){
+            s << ",";
+            continue;
+        }
         if (i != rhs.size() - 1) {
             s << ", ";
+            
         }
     }
-    s << "}";
+    s << "";
     return s;
 }
 
 template <typename T>
 std::ostream & operator<<(std::ostream & s, const Matrix<T> & rhs) {
-    s << "[ ";
+    s << "[";
     for (int i = 0; i < rhs.getRows(); ++i) {
-        s << rhs[i];
+        s << std::fixed << std::setprecision(4) << rhs[i]; // Use fixed for four decimal places
         if (i != rhs.getRows() - 1) {
-            s << ",\n ";
+            s << "\n ";
         }
     }
-    s << " ]";
+    s << "]";
     return s;
 }
 

@@ -59,5 +59,15 @@ int main(void) {
   std::cout << "s2 is:\n" << s2 << std::endl;
   Matrix<std::string> s3(s1+s2);
   std::cout << "s3 is:\n" << s3 << std::endl;
+Matrix<int> ab(4, 5); // Create a 4x5 matrix initially
+
+// Create and add a new row that matches the number of columns (5)
+vector<int> t = {1, 2, 3, 4, 5};
+ab.pushBackRow(t); // Should add a new row to `ab`, expanding it to 5 rows
+
+// Optionally add more rows
+vector<int> t2 = {6, 7, 8, 9, 10};
+ab.pushBackRow(t2); // Expands `ab` to 6 rows
+cout << ab <<endl;
   return EXIT_SUCCESS;
 }

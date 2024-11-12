@@ -77,7 +77,17 @@
     "stop_token": "cpp",
     "thread": "cpp",
     "cfenv": "cpp",
-    "cinttypes": "cpp"
+    "cinttypes": "cpp",
+    "charconv": "cpp",
+    "format": "cpp",
+    "forward_list": "cpp",
+    "locale": "cpp",
+    "optional": "cpp",
+    "queue": "cpp",
+    "xhash": "cpp",
+    "xlocbuf": "cpp",
+    "xlocmes": "cpp",
+    "xtree": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
