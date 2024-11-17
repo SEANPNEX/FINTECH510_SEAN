@@ -1,0 +1,4 @@
+noun:dog,cat,wizard,knight
+verb:run,jump,fly
+adjective:happy,tall,mysterious
+adverb:quickly,gracefully
