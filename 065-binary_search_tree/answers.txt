@@ -1,0 +1,5 @@
+O(logN)
+O(N)
+O(N)
+B
+D

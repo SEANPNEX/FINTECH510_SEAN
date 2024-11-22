@@ -2,6 +2,7 @@
 #define BINARY_SEARCH_TREE_HPP
 
 #include <iostream>
+#include <cmath>
 
 template<typename T>
 class BinarySearchTree {
@@ -45,26 +46,69 @@ private:
         return newNode;
     }
 
-    size_t compute_height(Node *node) const {
-        // need to implement
+size_t compute_height(Node* node) const {
+    // need to implement
+    if (node == nullptr) {
         return 0;
     }
 
+    size_t left_height = compute_height(node->left);
+    size_t right_height = compute_height(node->right);
+
+    return 1 + std::max(left_height, right_height);
+}
+
+
     size_t countLeaves(Node* node) const {
-        // need to implement
-        return 0;
+
+        if (node == nullptr) {
+            return 0;
+        }
+
+
+        if (node->left == nullptr && node->right == nullptr) {
+            return 1;
+        }
+
+        size_t left_leaves = countLeaves(node->left);
+        size_t right_leaves = countLeaves(node->right);
+
+        return left_leaves + right_leaves;
     }
+
 
     void inorder(Node* node, std::ostream& os) const {
         // need to implement 
+        if (node == nullptr){
+            return;
+        }
+        inorder(node->left, os);
+        os << node->data << " ";
+        inorder(node->right, os);
+        return;
     }
 
     void preorder(Node* node, std::ostream& os) const {
         // need to implement 
+        if (node == nullptr){
+            return;
+        }
+        os << node->data << " ";
+        preorder(node->left, os);
+        preorder(node->right, os);
+
+        return;
     }    
 
     void postorder(Node* node, std::ostream& os) const {
         // need to implement 
+        if (node == nullptr){
+            return;
+        }
+        postorder(node->left, os);
+        postorder(node->right, os);
+        os << node->data << " ";
+        return;
     } 
 
     Node* minValueNode(Node* node) {
@@ -75,12 +119,33 @@ private:
     }
 
     Node* deleteNode(Node* node, T value) {
-        if (node == nullptr) return node;
 
         // need to implement
-        
+        if (node == nullptr) return node;
+        if (value < node->data) node->left = deleteNode(node->left, value);
+        else if (value > node->data) node->right = deleteNode(node->right, value);
+        else { // found the node to delete
+        if (node->left == nullptr) {// Node with only one child or no child
+            Node* temp = node->right;
+            // free the current node
+            delete node;
+            return temp;
+        }
+        else if (node->right == nullptr) {
+            Node* temp = node->left;
+            // free the current node
+            delete node;
+            return temp;
+        }
+        // Node with two children: Get the inorder successor (smallest in the right subtree)
+        Node* temp = minValueNode(node->right);
+        node->data = temp->data;
+        node->right = deleteNode(node->right, temp->data);
+        }
         return node;
     }    
+
+
 
 
     
@@ -146,9 +211,24 @@ public:
 
     bool exists(T value) const {
         // need to implement
-        return false;
+        if (root == nullptr){
+            return false;
+        }
+        return contains(root,value);
     }
-
+    bool contains(Node* node, T value) const {
+        if (node == nullptr){
+            return false;
+        }
+        if(node->data==value){
+            return true;
+        }
+        if(value<node->data){
+            return contains(node->left, value);
+        }else{
+            return contains(node->right, value);
+        }
+    }
 
     void deleteValue(T value) {
         root = deleteNode(root, value);
