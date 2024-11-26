@@ -103,7 +103,8 @@
     "set": "cpp",
     "stack": "cpp",
     "variant": "cpp",
-    "dense": "cpp"
+    "dense": "cpp",
+    "valarray": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
