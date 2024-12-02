@@ -1,0 +1,51 @@
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XSX...X          ...X                 X        ...X
+X.X.X.XXXXXXX XXX.X.XXX XXXXXXXXXXXXX X XXXXXXX.X.X
+X...X.X.....X X...X...X     X       X       X...X.X
+XXXXX.X.XXX.XXX.XXXXX.XXXXX XXXXX XXXXXXXXXXX.XXX.X
+X   X...X X...X...XbX.X           X.....X.....XbX.X
+X XXXXXXX XXX.XXX.XbX.XXXXXXX XXXXX.XXX.X.XXXXXbX.X
+X         X X...X.XbX.......X X.....X X...X...X...X
+X XXXXXXX X XXX.X.XbXXXXXXX.XXX.XXXXX XXXXX.X.X.XXX
+X X   X X     X...XbX.......X...X         X.X...XbX
+X X X X X XXX XXXXXbX.XXXXXXX.XXXXX XXXXX X.XXXXXbX
+X   X   X   X X.......X X    .X...X   X   X.X...XbX
+XXXXXXXXXXX X X.XXXXXXX X XXX.X.X.XXX X X X.X.X.XbX
+X         X X X...X X   X X X.X.X...X X X X.X.X.XbX
+X XXXXXXX X X XXX.X X X X X X.X.XXX.XXX X X.X.X.XbX
+X X     X X X X...X   X X   X.X.X...X   X X...X...X
+X XXXXX X X X X.XXX XXX XXX X.X.X.XXX XXXXXXXXXXX.X
+X     X     X X.X X X X X   X...X.X   X         X.X
+XXXXX X XXXXXXX.X X X X X XXXXXXX.XXX X X XXXXXXX.X
+X     X X     X.X   X X X X     X...X   X     X...X
+X XXXXXXX XXX X.XXX X X X X XXXXXXX.XXX XXXXX X.XXX
+X       X X X X...X   X X X       X...X X     X.XbX
+X XXXXX X X X XXX.XXX X X X XXX XXXXX.X X XXXXX.XbX
+X     X X   X   X.X X X   X X X X...X.X X     X...X
+XXXXXXX X XXXXX X.X X XXXXX X X X.X.X.X XXXXX XXX.X
+X   X   X X     X.X X     X   X X.X.X.X     X   X.X
+X X X XXX X XXXXX.X XXXXX XXXXX X.X.X.XXXXXXX XXX.X
+X X   X   X   X...X     X X     X.X...X     X   X.X
+X XXX X XXXXX X.XXX XXXXX X XXXXX.XXXXX XXX XXX X.X
+X   X X     X X...X         X...X.X     X X X   X.X
+X X XXXXXXX X XXX.X XXXXXXXXX.X.X.X XXXXX X X XXX.X
+X X X       X   X.X       X...X.X.X X X     X X...X
+X X X XXXXXXXXX X.XXXXXXX X.XXX.X.X X X XXXXX X.XXX
+X X   X     X   X.X...X   X.X X.X.X X         X.XbX
+X XXXXXXX X X XXX.X.X.XXXXX.X X.X.X XXXXXXXXX X.XbX
+X   X     X X X...X.X.X...X.X X...X X...X...X X...X
+XXX X X X XXX X.XXX.X.X.X.X.X XXXXX X.X.X.X.XXXXX.X
+X X X X X X   X.X  .X...X...X       X.X...X.......X
+X X XXX X X XXX.XXX.XXXXXXXXX XXXXXXX.XXXXXXXXXXXXX
+X X     X X   X.....X         X.......X  ...XbbbbbX
+X XXXXXXX XXX XXXXXXX XXXXXXX X.XXXXXXX X.X.XXXbXbX
+X   X X   X X   X   X     X   X.X     X X.X...XbXbX
+X X X X XXX X XXX X X XXX XXX X.XXX X X X.XXX.XbXXX
+X X   X     X     X X   X   X X...X X X X.X...XbbbX
+X XXXXXXXXX XXXXXXX XXX XXX X XXX.X XXX X.X.XXXbXbX
+X X       X   X   X   X X   X   X.X X   X.X.XbbbXbX
+X X XXX XXXXX X X X XXX X X XXXXX.X X XXX.X.XXXXXbX
+X X X X X   X   X X   X X X X.....X   X...X...X...X
+X X X X X X XXXXX XXX X X XXX.XXXXXXXXX.XXXXX.X.X.X
+X     X   X         X   X    ...........X    ...XFX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX

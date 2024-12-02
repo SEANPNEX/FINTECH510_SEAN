@@ -93,12 +93,50 @@ void printMaze(Grid &maze) {
 void solveMazeRecursive(Grid &maze) {
     solveMazeRecursive(maze,1,1);  // start solving the maze at the start
     maze[1][1] = 'S'; // replace start, which may be removed during solving stage
+
 }
 
 bool solveMazeRecursive(Grid &maze, int row, int col) {
-    // Only alter this function
-    return false; // only present so initial code will compile
+    // Base case: success
+    if (maze[row][col] == 'F') {
+        return true;
+    }
+
+    // Failure cases: wall, already visited, or backtracked path
+    if (maze[row][col] == 'X' || maze[row][col] == '.' || maze[row][col] == 'b') {
+        return false;
+    }
+
+    // Mark the current cell as visited
+    char original = maze[row][col]; // Preserve original value for selective blanking
+    maze[row][col] = '.';
+
+    // Explore paths in the order: up, down, right, left
+    if (solveMazeRecursive(maze, row - 1, col) ||  // Up
+        solveMazeRecursive(maze, row + 1, col) ||  // Down
+        solveMazeRecursive(maze, row, col + 1) ||  // Right
+        solveMazeRecursive(maze, row, col - 1)) {  // Left
+        return true;
+    }
+
+    // Backtrack: Determine if we should mark as 'b' or leave blank
+    int openPaths = 0;
+
+    if (maze[row - 1][col] == '.' || maze[row - 1][col] == ' ') openPaths++; // Up
+    if (maze[row + 1][col] == '.' || maze[row + 1][col] == ' ') openPaths++; // Down
+    if (maze[row][col - 1] == '.' || maze[row][col - 1] == ' ') openPaths++; // Left
+    if (maze[row][col + 1] == '.' || maze[row][col + 1] == ' ') openPaths++; // Right
+
+    // Mark as 'b' only for true dead ends or constrained paths
+    if (openPaths <= 1) {
+        maze[row][col] = 'b';
+    } else {
+        maze[row][col] = original; // Restore original value (blank space)
+    }
+
+    return false;
 }
+
 
 
 
