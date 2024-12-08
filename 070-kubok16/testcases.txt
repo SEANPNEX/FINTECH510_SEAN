@@ -1,5 +1,11 @@
 #error
 missing_rows.txt
+missing_grid.txt
+out_of_range_1.txt
+out_of_range_2.txt
+missing_column_sum.txt
 
 #success
 sample_easy.txt
+sample_expert.txt
+valid1.txt

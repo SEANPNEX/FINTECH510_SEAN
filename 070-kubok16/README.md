@@ -72,6 +72,7 @@ direct results of the test cases. You will be expected to create your test
 cases. The assignment grader will run your test cases against your submission 
 and the reference implementation. You need to create a "testcases.txt" file 
 that has two sections:
+
 - #error: lists any test cases that should generate an error message and 
   an exit code.
 - #success: lists any test cases that should run normally.  The outputs from the 
@@ -101,6 +102,7 @@ need to include the provided data files if they are part of your test cases.
 ## Academic Integrity
 **Note:** This is an evaluative assignment!  By submitting this assignment, 
 you agree that you have adhered to the following rules:
+
 - Your work must be your own!
 - You may NOT consult with other students about:
   - high-level approaches,
@@ -119,7 +121,7 @@ you agree that you have adhered to the following rules:
 -	You MAY consult notes you wrote in your notebook.
 -	You MAY consult the man pages.
 -	You MAY ask the professor or TAs for assistance on the assignment.
- 
+
 If you use code from one of the approved sources, you should reference that 
 source in a comment just prior to the function or code section. 
 This includes any prior assignments.

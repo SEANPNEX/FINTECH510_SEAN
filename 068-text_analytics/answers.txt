@@ -2,8 +2,8 @@ the
 gatsby
 \b\w*zz\w*\b
 \b\w*x\b
-[A-Za-z]*(cei|[^c]ie)[A-Za-z]*
-(?:(?![aeiou])[a-z]){4}
+[A-Za-z]*([^c]ei)[A-Za-z]*
+\b\w*[b-df-hj-np-tv-xzB-DF-HJ-NP-TV-XZ]{4}\w*\b
 \b\d{5}(-\d{4})?\b
 \b\d{2}/\d{2}/(\d{4})\b
 \b4\d{3} \d{4} \d{4} \d{4}\b
